@@ -1,15 +1,10 @@
 import { typeDefs, resolvers } from './models'
+import context from './context'
 
 const options = {
   typeDefs,
   resolvers,
-  onHealthCheck: () => {
-    return new Promise((resolve, reject) => {
-      if (true) resolve()
-
-      reject()
-    })
-  }
+  context,
 }
 
 export default options

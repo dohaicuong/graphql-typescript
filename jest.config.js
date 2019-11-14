@@ -6,7 +6,7 @@ module.exports = {
     "**/__tests__/**/*.+(ts|tsx|js)",
     "**/?(*.)+(spec|test).+(ts|tsx|js)"
   ],
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node", "graphql"],
+  moduleFileExtensions: ["ts", "js", "json", "node", "graphql"],
   "transform": {
     "^.+\\.(ts|tsx)?$": "ts-jest"
   },

@@ -22,7 +22,7 @@ module.exports = {
     : [new CleanWebpackPlugin()],
   watch: NODE_ENV === 'dev' ? true : false,
 
-  entry: [path.join(__dirname, 'src/index.ts')],
+  entry: [ path.join(__dirname, 'src/index.ts') ],
   externals: [nodeExternals()],
   module: {
     rules: [
