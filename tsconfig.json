@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "strictNullChecks": false,
+    "removeComments": true,
+    "target": "es6",
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "files": [
+    "./src/@types/graphql.d.ts"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "lib": [
+    "es2015"
+  ]
+}

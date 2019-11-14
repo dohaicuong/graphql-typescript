@@ -1,0 +1,10 @@
+extend type User {
+  posts: [Post!]
+}
+
+type Post {
+  id: ID!
+
+  title: String!
+  content: String!
+}

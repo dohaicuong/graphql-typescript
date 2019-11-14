@@ -1,0 +1,9 @@
+schema: src/models/**/*.graphql
+generates:
+  ./src/models/graphql_types.ts:
+    plugins:
+      - typescript
+      - typescript-resolvers
+    config:
+      avoidOptionals: false
+      federation: true
