@@ -14,7 +14,7 @@ const Mutation = {
         token: '123',
         user: {
           id: '1',
-          email: 'beatyshot@gmail.com',
+          email: 'example@gmail.com',
           name: 'Yuki',
         }
       }
