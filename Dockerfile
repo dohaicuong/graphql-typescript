@@ -5,8 +5,10 @@ RUN yarn
 COPY . .
 RUN yarn build
 
-FROM node:12.13
-WORKDIR /etc/app
-COPY --from=builder /app/dist/* /etc/app/
-COPY --from=builder /app/node_modules .
-ENTRYPOINT node server.js
+ENTRYPOINT yarn start
+
+# FROM node:12.13
+# WORKDIR /etc/app
+# COPY --from=builder /app/dist .
+# COPY --from=builder /app/node_modules .
+# COPY --from=builder /app/package.json .
