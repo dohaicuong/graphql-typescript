@@ -1,0 +1,9 @@
+node_modules
+
+dist
+__tests__
+graphql_types.ts
+
+*.log
+
+Dockerfile
