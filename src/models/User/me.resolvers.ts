@@ -1,6 +1,6 @@
-import { QueryResolvers, User } from '../graphql_types'
+import { User } from '../graphql_types'
 
-const Query: QueryResolvers = {
+const Query = {
   me: (): User => {
     return {
       id: '1',
