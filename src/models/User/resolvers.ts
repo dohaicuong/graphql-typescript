@@ -1,13 +1,10 @@
 import { User } from '../graphql_types'
 
 const Query = {
-  me: (): User => {
-    return {
-      id: '1',
-      email: 'beatyshot@gmail.com',
-      password: 'here',
-      name: 'Yuki',
-    }
+  me: async (_, __, { prisma }): Promise<User> => {
+    const [user] = await prisma.users()
+
+    return user
   }
 }
 
