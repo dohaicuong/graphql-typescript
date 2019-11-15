@@ -1,11 +1,10 @@
-import { User } from '../graphql_types'
+import { QueryResolvers, User } from '../graphql_types'
 
-const Query = {
+const Query: QueryResolvers = {
   me: (): User => {
     return {
       id: '1',
       email: 'beatyshot@gmail.com',
-      password: 'here',
       name: 'Yuki',
     }
   }

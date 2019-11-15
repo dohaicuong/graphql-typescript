@@ -29,7 +29,9 @@
   },
   "dependencies": {
     "apollo-server": "^2.9.9",
-    "merge-graphql-schemas": "^1.7.3"
+    "graphql-middleware": "^4.0.2",
+    "merge-graphql-schemas": "^1.7.3",
+    "yup": "^0.27.0"
   },
   "nodemonConfig": {
     "watch": [
