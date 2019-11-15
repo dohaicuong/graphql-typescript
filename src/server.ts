@@ -1,9 +1,18 @@
 import { typeDefs, resolvers } from './models'
 import context from './context'
 
+import { applyMiddleware } from 'graphql-middleware'
+import { makeExecutableSchema } from 'apollo-server'
+
+import validationMiddleware from './middlewares/validation'
+
+const schema = applyMiddleware(
+  makeExecutableSchema({ typeDefs, resolvers }),
+  validationMiddleware
+)
+
 const options = {
-  typeDefs,
-  resolvers,
+  schema,
   context,
 }
 

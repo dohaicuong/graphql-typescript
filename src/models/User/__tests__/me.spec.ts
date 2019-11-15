@@ -1,4 +1,4 @@
-import resolvers from '../resolvers'
+import resolvers from '../me.resolvers'
 
 describe('User model', () => {
   it('return me user', async () => {
